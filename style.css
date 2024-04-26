@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body{
+    height:100%
+}
+
+/* header */
+.menu-btn{
+    color: black;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    box-shadow: 0 0px 14px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo.h1{
+    color: darkgray;
+    border-bottom: 4px solid rgb(219, 97, 97);
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 25px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    font-weight: bold;
+}
+
+.navbar .menu li .active{
+    color: rgb(203, 60, 60);
+}
+
+.navbar .menu li a i{
+    color: rgb(203, 60, 60);
+
+}
+
+.navbar .menu li a:hover{
+    color: rgb(203, 60, 60);
+    border-bottom: 4px solid rgb(203, 60, 60);
+}
+
+/* content */
+
+.content{
+    background-image: url("images/bg2.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    height: 100vh;
+}
+
+.content h1{
+    font-size: 40px;
+}
+
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.content button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(203, 60, 60);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pheading{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* products */
+
+.sec{
+    padding: 10px 5%;
+
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.products .card{
+    width : 310px;
+    background: #f2eded;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.products .card img{
+    height: 250px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+.products .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color:rgb(89, 100, 100);
+    padding: 0 20px;
+}
+
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.products .card .box .price{
+    color: rgb(203, 60, 60);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.products .card .box .btn{
+    padding: 5px 10px;
+    background-color: rgb(203, 60, 60);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.products .card .box .btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #f2eded;
+    height: 10vh;
+}
+
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+
+footer p a{
+    text-decoration: none;
+    color: rgb(203, 60, 60);
+    font-weight: bold;
+}
